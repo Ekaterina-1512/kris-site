@@ -29,7 +29,7 @@
        Буду рада нашим совместным тренировкам.</p>
   </div>
   <?php
-include "shapka.php";
-include "footer.php";
+include "./components/shapka.php";
+include "./components/footer.php";
 ?>
 <script src = "/js/panel.js">

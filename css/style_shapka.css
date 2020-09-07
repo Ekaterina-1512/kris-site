@@ -23,12 +23,18 @@ h1{
     color: white; 
 }
 .menu{
-    display: flex;
+    display: inline-flex;
     justify-content: space-between;
     font-size: 5px;
+    padding: 50px;
+    top: 0px;
 }
 header{
     background: black;
     width: 100%;
     display: inline-block;
+}
+
+.menu-button{
+    margin: 10px;
 }

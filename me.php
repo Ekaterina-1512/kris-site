@@ -1,20 +1,5 @@
-<style>
-  .main2{ 
-      position: absolute;
-      margin-left: calc(100%/3);
-      margin-top: 200px;
-      font-size: 30px;
-      background-color: #d4f0a8;
-      position: absolute;
-      width: 500px;
-      border: 2px solid #578f00;
-      padding: 5px;
-      text-align: center;
-  }
-  span{
-    font-size: 40px;
-  }
-</style>
+<?php include "./components/shapka.php";?>
+
 <div class = "main2">
   <meta charset="UTF-8">
       <span><b>История обо мне!</b></span> </br>
@@ -28,8 +13,5 @@
       Я постоянно учусь и развиваюсь.Я готова помочь Вам стать лучше и красивее.
        Буду рада нашим совместным тренировкам.</p>
   </div>
-  <?php
-include "./components/shapka.php";
-include "./components/footer.php";
-?>
-<script src = "/js/panel.js">
+
+  <?php include "./components/footer.php"; ?>

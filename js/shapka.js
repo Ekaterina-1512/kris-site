@@ -17,5 +17,9 @@ $(document).ready(function(){
     location.href = "/contact.php"
   })
 
+  $('#lk_button').click(function(e){
+    location.href = "/lk.php"
+  })
+
 })
       

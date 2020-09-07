@@ -1,3 +1,6 @@
+<?php
+  session_start();
+?>
 <!doctype html>
 <html lang="ru">
   <head>
@@ -6,6 +9,8 @@
     <title><?php print $title; ?></title>
     <link rel="stylesheet" href="/css/style_shapka.css">
     <link rel="stylesheet" href="/css/pages.css" type="text/css">
+    <link rel="stylesheet" href="/css/form.css">
+    <link rel="stylesheet" href="/css/login.css">
    
   </head>
   <body>
@@ -18,8 +23,14 @@
       <button class = "menu-button" id="aboutme_button">Обо мне</button>
       <button class = "menu-button" id="catalog_button">Каталог упражнений</button>
       <button class = "menu-button" id="contacts_button">Контакты</button>
+      <?php
+        if($_SESSION['logged'] != true){
+      ?>
       <button class = "menu-button" id="lk_button">Личный кабинет</button>
-
+      <?php
+        } else{ ?>
+        <button class = "menu-button" id="lk_button">Выход</button>
+        <?php }?>
     </div>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
       <script src = "/js/shapka.js"></script>

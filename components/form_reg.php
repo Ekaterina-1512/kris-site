@@ -33,5 +33,5 @@
     <input type="submit" value="Зарегистрироваться">
     </form>
    <script src="js/form_reg.js"></script>
-   </div>
+</div>
    

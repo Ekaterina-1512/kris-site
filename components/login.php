@@ -5,15 +5,16 @@
     <label for="tab-btn-2">Регистрация</label>
 
     <div id="login_form">
-        <form action="php/autho_obr.php" method="post">
+        <form action="lk.php" method="post">
             <input required type="email" placeholder = "@mail" name="email"><br/>
             <input type="password" name="password" required placeholder="password">
+            <input type="hidden" name="login" value="login">
             <hr>
             <input type="submit">
         </form>
     </div>
     <div id="registration_form">
-    <form action="php/reg_obr.php" method = "POST">
+    <form action="lk.php" method = "POST">
         <input required type="text" placeholder = "Имя" name="name">
         <input required type="text" placeholder = "Фамилия" name="lastname">
         <input type="text" placeholder = "Отчество (если есть)" name="patronymic">

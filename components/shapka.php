@@ -29,7 +29,8 @@
       <button class = "menu-button" id="lk_button">Личный кабинет</button>
       <?php
         } else{ ?>
-        <button class = "menu-button" id="lk_button">Выход</button>
+        <?php print($_SESSION["name"]); ?>
+        <button class = "menu-button" id="logout_button">Выход</button>
         <?php }?>
     </div>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

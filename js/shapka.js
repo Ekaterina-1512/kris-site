@@ -21,5 +21,9 @@ $(document).ready(function(){
     location.href = "/lk.php"
   })
 
+  $('#logout_button').click(function(e){
+    location.href = "/logout.php"
+  })
+
 })
       

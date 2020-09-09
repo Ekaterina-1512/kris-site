@@ -18,7 +18,7 @@ $(document).ready(function(){
   })
 
   $('#lk_button').click(function(e){
-    location.href = "/lk.php"
+    location.href = "/login.php"
   })
 
   $('#logout_button').click(function(e){

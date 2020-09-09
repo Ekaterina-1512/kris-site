@@ -37,5 +37,7 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" width="10px"
     height="10px"></script>
       <script src = "/js/shapka.js"></script>
+      <script src = "/js/login.js"></script>
+      <script src = "/js/register.js"></script>
     </header>
     

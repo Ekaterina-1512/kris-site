@@ -29,8 +29,19 @@ function checkEmail($email){
     if($mysql_result == false){
         return $mysqli->error;
     } else{
-        return $mysqli_result->fetch_assoc();
+        return $mysql_result->fetch_assoc();
     }
+}
+
+function checkParameters($data){
+    $result = true;
+    foreach($data as $item){
+        if($item == ""){
+            $result = false;
+            break;
+        }
+    }
+    return $result;
 }
 
 ?>

@@ -3,6 +3,9 @@
 session_start();
 include "./tools/check_data.php";
 
+$reg_form = "";
+$login_form = "checked";
+
 $data = resetData($_POST);
 
 if(isset($data["login"]) and $data["login"] == "login"){
@@ -14,8 +17,17 @@ if(isset($data["login"]) and $data["login"] == "login"){
            $_SESSION["name"] = $row["name"];
        } else{
            $_SESSION["logged"] = false;
+           $login_form = "checked";
        }
    }
+} else if(isset($datap["login"]) and $data["login"] == "reg"){
+    $row = checkEmail($data["email"]);
+    if($row != NULL){
+        $login_form = "";
+        $reg_form = "checked";
+    }
+} else {
+    
 }
 
 ?>

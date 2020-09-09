@@ -6,7 +6,8 @@ function resetData($data){
         $val=str_replace('\'','',$val);
     endforeach;
     return $data;
-    };
+};
+
 
 function checkLogin($email, $password){
     $query = "SELECT cl.name FROM clients cl WHERE email=\"$email\" AND `password`=\"$password\"";
@@ -19,4 +20,17 @@ function checkLogin($email, $password){
         return $mysql_result;
     }
 }
+
+function checkEmail($email){
+    $query = "SELECT cl.email FROM clients cl WHERE email = \"$email\"";
+    include "mysql_connect.php";
+
+    $mysql_result = $mysqli->query($query);
+    if($mysql_result == false){
+        return $mysqli->error;
+    } else{
+        return $mysqli_result->fetch_assoc();
+    }
+}
+
 ?>

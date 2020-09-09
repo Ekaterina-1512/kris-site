@@ -1,7 +1,7 @@
 <div class="tabs">
-    <input type="radio" name="tab-btn" id="tab-btn-1" value="" checked>
+    <input type="radio" name="tab-btn" id="tab-btn-1" value="" <?php print $login_form; ?>>
     <label for="tab-btn-1">Вход</label>
-    <input type="radio" name="tab-btn" id="tab-btn-2" value="">
+    <input type="radio" name="tab-btn" id="tab-btn-2" value="" <?php print $reg_from; ?>>
     <label for="tab-btn-2">Регистрация</label>
 
     <div id="login_form">
@@ -13,8 +13,11 @@
             <input type="submit">
         </form>
     </div>
+    
+    
     <div id="registration_form">
     <form action="lk.php" method = "POST">
+        <input type="hidden" name="login" value="reg">
         <input required type="text" placeholder = "Имя" name="name">
         <input required type="text" placeholder = "Фамилия" name="lastname">
         <input type="text" placeholder = "Отчество (если есть)" name="patronymic">
@@ -46,4 +49,5 @@
         <input type="submit" value="Зарегистрироваться">
     </form>  
     </div>
+
   </div>

@@ -5,7 +5,7 @@
       background-color: black;
       color: white;
       text-align: center;
-      position: absolute;
+      position: fixed; 
       left: 0;
       bottom: 0;
       height: 50px;

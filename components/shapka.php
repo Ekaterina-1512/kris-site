@@ -9,7 +9,6 @@
     <title><?php print $title; ?></title>
     <link rel="stylesheet" href="/css/style_shapka.css">
     <link rel="stylesheet" href="/css/pages.css" type="text/css">
-    <link rel="stylesheet" href="/css/form.css">
     <link rel="stylesheet" href="/css/login.css">
    
   </head>
@@ -27,13 +26,16 @@
         if($_SESSION['logged'] != true){
       ?>
       <button class = "menu-button" id="lk_button">Личный кабинет</button>
+      
       <?php
         } else{ ?>
         <?php print($_SESSION["name"]); ?>
         <button class = "menu-button" id="logout_button">Выход</button>
         <?php }?>
     </div>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <img class = "img_sport" src = "https://odintsovo.biz/img/catalog/yellow/odincovo-sport.jpg" >
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" width="10px"
+    height="10px"></script>
       <script src = "/js/shapka.js"></script>
     </header>
     

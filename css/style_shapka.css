@@ -6,7 +6,7 @@ body{
     display: flex;
     justify-content: space-around;
     position: relative;
-    margin-top: calc(100%/5);
+    margin-top: 100px;
 }
 .text{
     width: 600px;
@@ -19,21 +19,37 @@ body{
 h1{
     font-family: Briberra;
     font-size: 40px;
+    margin-left: 100px;
+    margin-top: 50px;
     color: white; 
+    width: calc(100% - 400px);
+    height: 50px;
+    white-space: pre;
 }
 .menu{
     display: inline-flex;
     justify-content: space-between;
+    align-self: flex-end;
     font-size: 5px;
     padding: 50px;
     top: 0px;
+    height: 150px;
+    width: 1000px;
 }
 header{
     background: black;
     width: 100%;
-    display: inline-block;
+    display: flex;
+    
 }
 
 .menu-button{
     margin: 10px;
+    white-space: pre;
+}
+.img_sport{
+    width: 200px; 
+    height: 200px; 
+    justify-content: right;
+    white-space: pre;
 }

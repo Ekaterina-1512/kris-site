@@ -26,7 +26,7 @@ if(isset($data["login"]) and $data["login"] == "login"){
     if(!$_SESSION["logged"]){
         include "./components/login.php";
     } else{
-        print("Здесь личный кабинет");
+        print("Добро пожаловать!");
     }
 ?>
 

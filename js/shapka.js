@@ -1,6 +1,6 @@
 $(document).ready(function(){
   
-//Добавляем сулашателя на кнопки
+//Добавляем слушателя на кнопки
   $('#main_button').click(function(e){
     location.href = "/"
   })
